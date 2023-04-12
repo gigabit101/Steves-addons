@@ -1,9 +1,10 @@
 package net.gigabit101.stevesaddons.client;
 
 import net.gigabit101.stevesaddons.StevesAddons;
+import net.gigabit101.stevesaddons.init.ModItems;
+import net.gigabit101.stevesaddons.init.ModModules;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import org.jetbrains.annotations.NotNull;
 
 public class StevesAddonsCreativeTab
@@ -12,7 +13,7 @@ public class StevesAddonsCreativeTab
     {
         public @NotNull ItemStack makeIcon()
         {
-            return new ItemStack(Items.DIAMOND);
+            return new ItemStack(ModItems.MODULES.get(ModModules.COPPER_WOOD_CUTTER).get());
         }
     });
 }

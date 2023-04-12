@@ -26,6 +26,12 @@ public class ItemStevesAddonsModule extends Item implements IModuleItem
     }
 
     @Override
+    public @NotNull Component getName(@NotNull ItemStack stack)
+    {
+        return Component.translatable("item.stevesaddons." + moduleData.getRawName());
+    }
+
+    @Override
     public void appendHoverText(@NotNull ItemStack stack, @Nullable Level world, @NotNull List<Component> textComponents, @NotNull TooltipFlag flag)
     {
         if (moduleData != null)
