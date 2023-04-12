@@ -127,7 +127,9 @@ repositories {
         name "Architectury"
         url "https://maven.architectury.dev/"
     }
-     flatDir {
+    maven { url = 'https://modmaven.dev/' } // mek
+
+    flatDir {
          dir 'libs'
      }
 }
@@ -138,7 +140,7 @@ dependencies {
     implementation fg.deobf("dev.architectury:architectury-forge:${project.architectury_version}")
     implementation fg.deobf("net.creeperhost:polylib-forge:${project.polylib_version}")
     runtimeOnly fg.deobf("mezz.jei:jei-${project.mc_version}-forge:${project.jei_version}")
-
+    runtimeOnly fg.deobf("mekanism:Mekanism:${project.mekanism_version}")
 
     implementation fg.deobf("stevescarts:stevescarts:1.19.2-1.1.0")
 
