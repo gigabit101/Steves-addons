@@ -34,7 +34,7 @@ public class ModuleWoodcutterCopper extends ModuleWoodcutter
     @Override
     public int getRepairItemUnits(@NotNull ItemStack item)
     {
-        return !item.isEmpty() && item.getItem() == Items.COPPER_INGOT ? 16000 : 0;
+        return !item.isEmpty() && item.getItem() == Items.COPPER_INGOT ? 2000 : 0;
     }
 
     @Override
