@@ -1,7 +1,7 @@
 package net.gigabit101.stevesaddons.modules;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import net.gigabit101.stevesaddons.SlotRF;
+import net.gigabit101.stevesaddons.containers.SlotRF;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraftforge.api.distmarker.Dist;

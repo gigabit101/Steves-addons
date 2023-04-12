@@ -1,4 +1,4 @@
-package net.gigabit101.stevesaddons;
+package net.gigabit101.stevesaddons.containers;
 
 import net.minecraft.world.Container;
 import net.minecraft.world.item.ItemStack;

@@ -1,5 +1,6 @@
 package net.gigabit101.stevesaddons;
 
+import net.gigabit101.stevesaddons.client.StevesAddonsClient;
 import net.gigabit101.stevesaddons.init.ModItems;
 import net.gigabit101.stevesaddons.init.ModModules;
 import net.minecraftforge.common.MinecraftForge;
