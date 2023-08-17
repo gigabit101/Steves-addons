@@ -1,6 +1,5 @@
 package net.gigabit101.stevesaddons.items;
 
-import net.gigabit101.stevesaddons.client.StevesAddonsCreativeTab;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
@@ -21,7 +20,7 @@ public class ItemStevesAddonsModule extends Item implements IModuleItem
 
     public ItemStevesAddonsModule(ModuleData moduleData)
     {
-        super(new Properties().tab(StevesAddonsCreativeTab.CREATIVE_MODE_TAB).stacksTo(1));
+        super(new Properties().stacksTo(1));
         this.moduleData = moduleData;
     }
 

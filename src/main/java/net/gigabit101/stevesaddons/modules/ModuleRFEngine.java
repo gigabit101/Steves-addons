@@ -2,6 +2,7 @@ package net.gigabit101.stevesaddons.modules;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import net.gigabit101.stevesaddons.containers.SlotRF;
+import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraftforge.api.distmarker.Dist;
@@ -96,14 +97,14 @@ public class ModuleRFEngine extends ModuleEngine
 
     @OnlyIn(Dist.CLIENT)
     @Override
-    public void drawForeground(PoseStack matrixStack, GuiMinecart gui)
+    public void drawForeground(GuiGraphics guiGraphics, GuiMinecart gui)
     {
-        drawString(matrixStack, gui, "RF Engine", 8, 6, 4210752);
+        drawString(guiGraphics, gui, "RF Engine", 8, 6, 4210752);
         String strfuel = Localization.MODULES.ENGINES.NO_FUEL.translate();
         if (getTotalFuel() > 0)
         {
             strfuel = "Fuel: " + getTotalFuel();
         }
-        drawString(matrixStack, gui, strfuel, 8, 48, 4210752);
+        drawString(guiGraphics, gui, strfuel, 8, 48, 4210752);
     }
 }

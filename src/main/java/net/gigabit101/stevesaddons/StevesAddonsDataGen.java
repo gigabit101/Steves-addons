@@ -38,7 +38,7 @@ public class StevesAddonsDataGen
     {
         public GeneratorItemModels(DataGenerator generator, ExistingFileHelper existingFileHelper)
         {
-            super(generator, StevesAddons.MOD_ID, existingFileHelper);
+            super(generator.getPackOutput(), StevesAddons.MOD_ID, existingFileHelper);
         }
 
         @Override
@@ -58,7 +58,7 @@ public class StevesAddonsDataGen
     {
         public GeneratorLanguage(DataGenerator gen)
         {
-            super(gen, StevesAddons.MOD_ID, "en_us");
+            super(gen.getPackOutput(), StevesAddons.MOD_ID, "en_us");
         }
 
         @Override
