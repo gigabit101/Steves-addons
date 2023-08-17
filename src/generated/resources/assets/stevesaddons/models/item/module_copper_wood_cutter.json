@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "stevesaddons:items/copper_wood_cutter_icon"
+    "layer0": "stevesaddons:item/copper_wood_cutter_icon"
   }
 }

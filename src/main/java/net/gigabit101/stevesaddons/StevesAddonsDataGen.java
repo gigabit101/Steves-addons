@@ -45,7 +45,7 @@ public class StevesAddonsDataGen
         protected void registerModels()
         {
             ModItems.MODULES.forEach((moduleData, itemSupplier) -> singleTexture(RegistryNameHelper.getRegistryName(itemSupplier.get()).get().getPath(),
-                    mcLoc("item/generated"), "layer0", modLoc("items/" + moduleData.getRawName() + "_icon")));
+                    mcLoc("item/generated"), "layer0", modLoc("item/" + moduleData.getRawName() + "_icon")));
         }
         @Override
         public @NotNull String getName()
@@ -64,7 +64,7 @@ public class StevesAddonsDataGen
         @Override
         protected void addTranslations()
         {
-            add("itemGroup.stevesaddons", "Steves Addons");
+            add("steveaddons.creativetab", "Steve's Addons");
             ModItems.MODULES.forEach((moduleData, itemSupplier) ->
             {
                 String name = "item.stevesaddons." + moduleData.getRawName();

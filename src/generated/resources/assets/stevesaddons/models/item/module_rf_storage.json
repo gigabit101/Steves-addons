@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "stevesaddons:items/rf_storage_icon"
+    "layer0": "stevesaddons:item/rf_storage_icon"
   }
 }
