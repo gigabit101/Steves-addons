@@ -10,8 +10,8 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.energy.IEnergyStorage;
 import vswe.stevescarts.api.modules.template.ModuleEngine;
+import vswe.stevescarts.api.slots.SlotStevesCarts;
 import vswe.stevescarts.client.guis.GuiMinecart;
-import vswe.stevescarts.containers.slots.SlotBase;
 import vswe.stevescarts.entities.EntityMinecartModular;
 import vswe.stevescarts.helpers.Localization;
 
@@ -90,7 +90,7 @@ public class ModuleRFEngine extends ModuleEngine
     }
 
     @Override
-    protected SlotBase getSlot(final int slotId, final int x, final int y)
+    protected SlotStevesCarts getSlot(final int slotId, final int x, final int y)
     {
         return new SlotRF(getCart(), slotId, 8 + x * 18, 23 + 18 * y);
     }

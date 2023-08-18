@@ -4,9 +4,9 @@ import net.minecraft.world.Container;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import org.jetbrains.annotations.NotNull;
-import vswe.stevescarts.containers.slots.SlotBase;
+import vswe.stevescarts.api.slots.SlotStevesCarts;
 
-public class SlotRF extends SlotBase
+public class SlotRF extends SlotStevesCarts
 {
     public SlotRF(Container inventory, int id, int x, int y)
     {
