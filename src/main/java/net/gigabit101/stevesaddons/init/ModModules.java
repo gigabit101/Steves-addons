@@ -2,6 +2,7 @@ package net.gigabit101.stevesaddons.init;
 
 import net.gigabit101.stevesaddons.StevesAddons;
 import net.gigabit101.stevesaddons.modules.ModuleRFEngine;
+import net.gigabit101.stevesaddons.modules.ModuleRFStorage;
 import net.gigabit101.stevesaddons.modules.ModuleWoodcutterCopper;
 import net.minecraft.resources.ResourceLocation;
 import vswe.stevescarts.api.StevesCartsAPI;
@@ -33,7 +34,7 @@ public class ModModules
         MODULES.add(RF_ENGINE);
 
         RF_STORAGE = StevesCartsAPI.registerModule(new ResourceLocation(StevesAddons.MOD_ID, "rf_storage"),
-                new ModuleData(new ResourceLocation(StevesAddons.MOD_ID, "rf_storage"), "RF Storage", ModuleStorage.class, ModuleType.STORAGE, 0));
+                new ModuleData(new ResourceLocation(StevesAddons.MOD_ID, "rf_storage"), "RF Storage", ModuleRFStorage.class, ModuleType.STORAGE, 0));
         MODULES.add(RF_STORAGE);
     }
 }

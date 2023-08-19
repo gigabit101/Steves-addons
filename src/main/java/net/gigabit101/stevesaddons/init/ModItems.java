@@ -14,14 +14,13 @@ import java.util.function.Supplier;
 
 public class ModItems
 {
-    public static final Item.Properties ITEM_GROUP = new Item.Properties();
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, StevesAddons.MOD_ID);
 
     public static final Map<ModuleData, Supplier<Item>> MODULES = Util.make(new LinkedHashMap<>(), map ->
     {
         for (ModuleData value : ModModules.MODULES)
         {
-                map.put(value, ITEMS.register(value.getName(), () -> new ItemStevesAddonsModule(value)));
+            map.put(value, ITEMS.register(value.getName(), () -> new ItemStevesAddonsModule(value)));
         }
     });
 }

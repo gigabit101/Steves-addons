@@ -1,14 +1,17 @@
 package net.gigabit101.stevesaddons.modules;
 
-import com.mojang.blaze3d.vertex.PoseStack;
 import net.gigabit101.stevesaddons.containers.SlotRF;
+import net.gigabit101.stevesaddons.init.ModItems;
 import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.resources.language.I18n;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
+import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.energy.IEnergyStorage;
+import vswe.stevescarts.api.StevesCartsAPI;
 import vswe.stevescarts.api.modules.template.ModuleEngine;
 import vswe.stevescarts.api.slots.SlotStevesCarts;
 import vswe.stevescarts.client.guis.GuiMinecart;
@@ -106,5 +109,17 @@ public class ModuleRFEngine extends ModuleEngine
             strfuel = "Fuel: " + getTotalFuel();
         }
         drawString(guiGraphics, gui, strfuel, 8, 48, 4210752);
+    }
+
+    @Override
+    public String getModuleName()
+    {
+        return I18n.get("item.stevesaddons." + StevesCartsAPI.MODULE_REGISTRY.get(this.getModuleId()).getRawName());
+    }
+
+    @Override
+    public ItemStack getItemStack()
+    {
+        return new ItemStack(ModItems.MODULES.get(getData()).get());
     }
 }
